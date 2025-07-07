@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RainFlux</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .high-confidence { color: #2e7d32 !important; }    /* Green */
+      .medium-confidence { color: #ef6c00 !important; }  /* Orange */
+      .low-confidence { color: #c62828 !important; }     /* Red */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>RainFlux</h1>
+      <form method="post">
+        <div class="form-group">
+          <label for="Location">Location:</label>
+          <select name="Location">
+            <option>Sydney</option>
+            <option>Melbourne</option>
+            <option>Brisbane</option>
+            <option>Perth</option>
+            <option>Hobart</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="MinTemp">MinTemp:</label>
+          <input type="number" step="0.1" name="MinTemp" value="12.3" required />
+        </div>
+
+        <div class="form-group">
+          <label for="MaxTemp">MaxTemp:</label>
+          <input type="number" step="0.1" name="MaxTemp" value="24.5" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Rainfall">Rainfall:</label>
+          <input type="number" step="0.1" name="Rainfall" value="5.2" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Evaporation">Evaporation:</label>
+          <input type="number" step="0.1" name="Evaporation" value="4.6" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Sunshine">Sunshine:</label>
+          <input type="number" step="0.1" name="Sunshine" value="8.3" required />
+        </div>
+
+        {% for dir_feature in ['WindGustDir', 'WindDir9am', 'WindDir3pm'] %}
+        <div class="form-group">
+          <label for="{{ dir_feature }}">{{ dir_feature }}:</label>
+          <select name="{{ dir_feature }}">
+            <option>N</option>
+            <option>NE</option>
+            <option>E</option>
+            <option>SE</option>
+            <option>S</option>
+            <option>SW</option>
+            <option>W</option>
+            <option>NW</option>
+          </select>
+        </div>
+        {% endfor %}
+
+        <div class="form-group">
+          <label for="WindGustSpeed">WindGustSpeed:</label>
+          <input type="number" step="1" name="WindGustSpeed" value="44" required />
+        </div>
+
+        <div class="form-group">
+          <label for="WindSpeed9am">WindSpeed9am:</label>
+          <input type="number" step="1" name="WindSpeed9am" value="13" required />
+        </div>
+
+        <div class="form-group">
+          <label for="WindSpeed3pm">WindSpeed3pm:</label>
+          <input type="number" step="1" name="WindSpeed3pm" value="24" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Humidity9am">Humidity9am:</label>
+          <input type="number" step="1" name="Humidity9am" value="77" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Humidity3pm">Humidity3pm:</label>
+          <input type="number" step="1" name="Humidity3pm" value="52" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Pressure9am">Pressure9am:</label>
+          <input type="number" step="0.1" name="Pressure9am" value="1017.0" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Pressure3pm">Pressure3pm:</label>
+          <input type="number" step="0.1" name="Pressure3pm" value="1012.5" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Cloud9am">Cloud9am:</label>
+          <input type="number" step="1" name="Cloud9am" value="4" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Cloud3pm">Cloud3pm:</label>
+          <input type="number" step="1" name="Cloud3pm" value="6" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Temp9am">Temp9am:</label>
+          <input type="number" step="0.1" name="Temp9am" value="18.0" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Temp3pm">Temp3pm:</label>
+          <input type="number" step="0.1" name="Temp3pm" value="23.5" required />
+        </div>
+
+        <div class="form-group">
+          <label for="RainToday">RainToday:</label>
+          <select name="RainToday">
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="Year">Year:</label>
+          <input type="number" name="Year" value="2016" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Month">Month:</label>
+          <input type="number" name="Month" value="9" required />
+        </div>
+
+        <div class="form-group">
+          <label for="Day">Day:</label>
+          <input type="number" name="Day" value="24" required />
+        </div>
+
+        <button type="submit">Predict</button>
+      </form>
+
+      {% if prediction is not none %}
+      <div class="prediction-box">
+        <h2>Prediction: <span class="{{ confidence_color }}">{{ prediction }}</span></h2>
+        {% if probability %}
+        <p>Confidence: <strong class="{{ confidence_color }}">{{ probability }}</strong></p>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

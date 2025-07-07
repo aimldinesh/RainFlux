@@ -1,0 +1,100 @@
+/* style.css for RainFlux Web App */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  margin-top: 50px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  height: 44px;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='6'><path fill='%2300796b' d='M0 0l6 6 6-6z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 6px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+.prediction-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #e0f2f1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Confidence-based prediction coloring */
+.prediction-box .high-confidence {
+  color: #2e7d32 !important; /* Green */
+}
+
+.prediction-box .medium-confidence {
+  color: #ef6c00 !important; /* Orange */
+}
+
+.prediction-box .low-confidence {
+  color: #c62828 !important; /* Red */
+}
