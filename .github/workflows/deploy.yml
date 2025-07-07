@@ -45,7 +45,8 @@ jobs:
 
             - name: Deploying to Kubernetes
               run: |
-                kubectl apply -f kubernetes-deployment.yaml
+                kubectl apply -f kubernates-deployment.yaml
                 kubectl set image deployment/$DEPLOYMENT_NAME $DEPLOYMENT_NAME=$IMAGE:$GITHUB_SHA
             
                 
+              
