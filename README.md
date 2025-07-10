@@ -1,9 +1,5 @@
 # ☁️ RainFlux: Rain Prediction MLOps System
 
-![CI/CD](https://img.shields.io/github/actions/workflow/status/your-username/RainFlux/deploy.yml?label=CI/CD%20GKE&style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
-![Python](https://img.shields.io/badge/python-3.9-blue?style=for-the-badge)
-
 RainFlux is a production-ready end-to-end MLOps project that predicts whether it will rain tomorrow in Australian cities. The pipeline is powered by Flask, Docker, Kubernetes, and GitHub Actions to ensure reproducibility, scalability, and continuous delivery.
 
 ---
