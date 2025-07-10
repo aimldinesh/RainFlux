@@ -52,4 +52,58 @@ RainFlux is a production-ready end-to-end MLOps project that predicts whether it
 ---
 
 ## 📦 Project Structure
+```
+MLOPS_RainFlux_project/
+│
+├── app.py                         # Flask app for predictions
+├── Dockerfile                     # Docker image setup
+├── kubernates-deployment.yaml     # K8s deployment manifest
+├── requirements.txt               # Python dependencies
+├── setup.py                       # Packaging config
+├── .gitignore
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml             # GitHub Actions for CI/CD
+│
+├── artifacts/
+│   ├── models/
+│   │   ├── model.pkl
+│   │   ├── metrics.csv
+│   │   ├── confusion_matrix.png
+│   │   └── roc_curve.png
+│   ├── processed/
+│   │   ├── X_train.pkl
+│   │   ├── y_train.pkl
+│   │   └── <encoders>.pkl
+│   └── raw/
+│       └── data.csv
+│
+├── logs/
+│   └── log_<date>.log             # App and training logs
+│
+├── notebook/
+│   ├── notebook_testing.ipynb     # Jupyter exploration
+│   └── artifacts/                 # Local notebook outputs
+│
+├── pipeline/
+│   ├── training_pipeline.py       # Training orchestration script
+│   └── __init__.py
+│
+├── src/
+│   ├── custom_exception.py        # Custom error handler
+│   ├── data_processing.py         # Data cleaning & feature engineering
+│   ├── logger.py                  # Logging utility
+│   ├── model_training.py          # Model training logic
+│   └── __init__.py
+│
+├── static/
+│   └── style.css                  # Frontend styling
+│
+├── templates/
+│   └── index.html                 # Web app UI
+│
+└── venv/                          # Virtual environment (optional, ignored in Git)
+
+```
 
