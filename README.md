@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-RainFlux-00acc1?style=for-the-badge&logo=rainmeter&logoColor=white" alt="RainFlux Badge"/>
+  <img src="https://img.shields.io/github/workflow/status/aimldinesh/RainFlux/CI/CD%20Deployment%20to%20GKE?style=for-the-badge&label=CI/CD&logo=github-actions&color=4caf50" alt="CI/CD Status Badge"/>
+  <img src="https://img.shields.io/badge/MLOps-GKE%20%7C%20Flask%20%7C%20Docker%20%7C%20Kubernetes-blue?style=for-the-badge" alt="MLOps Stack Badge"/>
+  <img src="https://img.shields.io/github/last-commit/aimldinesh/RainFlux?style=for-the-badge&color=orange" alt="Last Commit Badge"/>
+  <img src="https://img.shields.io/github/license/aimldinesh/RainFlux?style=for-the-badge&color=blue" alt="License Badge"/>
+</p>
+
 # ☁️ RainFlux: Rain Prediction MLOps System
 
 RainFlux is a production-ready end-to-end MLOps project that predicts whether it will rain tomorrow in Australian cities. The pipeline is powered by Flask, Docker, Kubernetes, and GitHub Actions to ensure reproducibility, scalability, and continuous delivery.
