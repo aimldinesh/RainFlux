@@ -161,25 +161,17 @@ File path: `.github/workflows/deploy.yml`
 
 ---
 
-## 📸 Project Screenshots
-
-```markdown
-### 🔍 Local Testing – Rain Prediction Output
+📸 Project Screenshots
+🔍 Local Testing – Rain Prediction Output
 <p align="center"> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_prediction_yes_on_local.PNG" width="48%" /> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_prediction_NO_on_local.PNG" width="48%" /> </p>
-
-### ⚙️ GitHub Actions – CI/CD Pipeline
+⚙️ GitHub Actions – CI/CD Pipeline
 <p align="center"> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/Build_and_deploy_start_using_github_actions.PNG" width="48%" /> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/Build_and_deploy_complete_using_github_actions.PNG" width="48%" /> </p>
-
-### ☁️ GCP Deployment – GKE + Kubernetes
+☁️ GCP Deployment – GKE + Kubernetes
 <p align="center"> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_deployed_ongcp1.PNG" width="32%" /> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_deployed_on_gcp2.PNG" width="32%" /> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_deployed_on_gcp3.PNG" width="32%" /> </p>
-
-### 🌐 App Running on GCP External IP
+🌐 App Running on GCP External IP
 <p align="center"> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_running_on_gcp_ip1.PNG" width="32%" /> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_running_on_gcp_ip2.PNG" width="32%" /> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_running_on_gcp_ip_3.PNG" width="32%" /> </p>
-
-### ✅ CI/CD Pipeline – Deployment Success
+✅ CI/CD Pipeline – Deployment Success
 <p align="center"> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/github_deploy_done.PNG" width="60%" /> </p>
-
-```
 
 ---
 
