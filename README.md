@@ -177,7 +177,7 @@ File path: `.github/workflows/deploy.yml`
 
 ## 🙌 Acknowledgements
 
-* [Weather Data (BOM)](http://www.bom.gov.au/)
+* [Weather Data ](https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package)
 * XGBoost, scikit-learn
 * Google Cloud GKE & Artifact Registry
 * GitHub Actions CI/CD
