@@ -162,6 +162,7 @@ File path: `.github/workflows/deploy.yml`
 ---
 
 📸 Project Screenshots
+
 🔍 Local Testing – Rain Prediction Output
 <p align="center"> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_prediction_yes_on_local.PNG" width="48%" /> <img src="https://github.com/aimldinesh/RainFlux/blob/main/images/app_prediction_NO_on_local.PNG" width="48%" /> </p>
 ⚙️ GitHub Actions – CI/CD Pipeline
