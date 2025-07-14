@@ -143,6 +143,10 @@ docker build -t rainflux-app .
 
 # Run the container
 docker run -p 5000:5000 rainflux-app
+
+✅ After running, visit your app at:
+http://localhost:5000
+
 ```
 ---
 
