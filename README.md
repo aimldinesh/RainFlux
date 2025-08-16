@@ -5,9 +5,14 @@
   <img src="https://img.shields.io/github/last-commit/aimldinesh/RainFlux?style=for-the-badge&color=orange" alt="Last Commit Badge"/>
 </p>
 
-# ☁️ RainFlux: Rain Prediction MLOps System
+<div align="center">
 
-RainFlux is a production-ready end-to-end MLOps project that predicts whether it will rain tomorrow in Australian cities. The pipeline is powered by Flask, Docker, Kubernetes, and GitHub Actions to ensure reproducibility, scalability, and continuous delivery
+# ☁️ RainFlux: Rain Prediction MLOps System  
+
+RainFlux is a production-ready end-to-end MLOps project that predicts whether it will rain tomorrow in Australian cities.  
+The pipeline is powered by **Flask, Docker, Kubernetes, and GitHub Actions** to ensure reproducibility, scalability, and continuous delivery.  
+
+</div>
 
 ---
 
