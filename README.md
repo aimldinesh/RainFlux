@@ -132,6 +132,7 @@ pip install -e .  # or pip install -r requirements.txt
 # 4. Run locally
 python app.py
 ```
+The app will be available at: http://127.0.0.1:5000
 
 ---
 
